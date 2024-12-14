@@ -1,0 +1,74 @@
+/* Fonts */
+
+@font-face {
+  font-family: inter-semibold;
+  src: url("../fonts/inter-semibold.ttf");
+}
+
+/* Basic element presetting */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(-45deg, #ffffff, #45a5ff);
+  background-blend-mode: normal;
+}
+
+header {
+  width: calc(100vw - 20px);
+  height: 7vh;
+  padding: 10px;
+  background: #bbdefb;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header items */
+
+.logo {
+  margin: 0 5vw;
+  width: fit-content;
+  height: 7vh;
+}
+
+.menu-bar {
+  display: flex;
+  column-gap: 50px;
+  align-self: center;
+  font-family: inter-semibold, sans-serif;
+}
+
+.menu-button {
+  padding: 12px 20px;
+  color: #fff;
+  background: #2196f3;
+  border-radius: 5px;
+}
+
+header::after {
+  flex-grow: 1;
+  flex-basis: 0;
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  border-radius: 50%;
+  background: #444444;
+}
+
+/* Misc */
+
+.hide {
+  visibility: hidden;
+}
