@@ -20,3 +20,4 @@ function resizeHeaderItems() {
 
 resizeHeaderItems();
 window.addEventListener("resize", resizeHeaderItems);
+
