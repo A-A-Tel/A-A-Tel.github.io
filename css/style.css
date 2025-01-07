@@ -24,6 +24,7 @@
 }
 
 body {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -193,9 +194,9 @@ header::after {
     border-radius: 50%;
 }
 
-/* Main */
+/* Home items */
 
-.title {
+.home-title {
     font-size: 12vw;
     display: inline-block;
     margin: 10vh 0 0 5vw;
@@ -250,6 +251,8 @@ header::after {
     width: 100%;
     justify-content: space-between;
 }
+
+/* Tools items*/
 
 /* Misc */
 
