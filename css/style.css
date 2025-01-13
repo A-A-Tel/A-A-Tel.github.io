@@ -263,12 +263,16 @@ header::after {
     margin: 5vh auto;
     display: flex;
     flex-flow: row nowrap;
+    justify-content: space-between;
 }
 
 .tools-lang-container {
     width: 20%;
     height: 100%;
-    background: #ff0000;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    font-family: inter-regular, sans-serif;
 }
 
 
