@@ -273,6 +273,25 @@ header::after {
     flex-flow: column nowrap;
     justify-content: space-between;
     font-family: inter-regular, sans-serif;
+    font-size: 1.2vw;
+    color: #757575;
+    align-items: center;
+}
+
+.tools-lang-box img {
+    max-width: 70%;
+    max-height: 80%;
+    margin: auto 0;
+}
+
+.tools-enviroment-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: inter-regular, sans-serif;
+    font-size: 1.2vw;
+    color: #757575;
 }
 
 
