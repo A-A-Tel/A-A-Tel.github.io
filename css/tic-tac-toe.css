@@ -20,6 +20,10 @@
     background: #BBDEFB;
 }
 
+.spot-empty {
+    cursor: pointer;
+}
+
 .spot-o::after {
     content: '';
     position: absolute;

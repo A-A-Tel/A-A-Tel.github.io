@@ -64,4 +64,10 @@
     border: none;
     width: calc(100% - 2vw);
     margin: 0 1vw 1vw 1vw;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.select-color:hover {
+    transform: scale(1.1);
 }

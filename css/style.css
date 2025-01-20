@@ -161,6 +161,11 @@ header::after {
 
 .socials a img {
     width: 3vw;
+    transition: transform 0.5s;wdadw
+}
+
+.socials a img:hover {
+    transform: scale(1.1);
 }
 
 .decor {
@@ -330,8 +335,12 @@ header::after {
     margin: 10vh 0;
 }
 
-.feats-item p {
+.feats-item p  {
     max-width: 30vw;
+}
+
+.feats-item img {
+    max-width: 40vw;
 }
 
 /* Misc */
