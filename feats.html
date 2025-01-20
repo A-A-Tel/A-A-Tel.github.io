@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tools</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/tic-tac-toe.css">
+    <link rel="stylesheet" href="css/master-mind.css">
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<header>
+    <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+
+    <nav class="menu-bar">
+        <a href="index.html" class="menu-button">Home</a>
+        <a href="tools.html" class="menu-button">Tools</a>
+        <a href="feats.html" class="menu-button current-page">Feats</a>
+        <a href="contact.html" class="menu-button">Contact</a>
+    </nav>
+
+    <img class="logo hide" src="images/logo.png" alt="logo">
+</header>
+
+<main>
+    <h1 class="title">Not sold yet?</h1>
+
+    <div class="feats-item">
+        <p>
+            I made a Tic-Tac-Toe game using HTML, CSS and JavaScript. This game features clicking on empty spots and the
+            ability to play against each other. This, combined with the automatic reset makes for a fun experience.
+        </p>
+
+        <div class="game-grid">
+            <div onclick="setSpot(this)" id="0" class="spot-empty"></div>
+            <div onclick="setSpot(this)" id="1" class="spot-empty"></div>
+            <div onclick="setSpot(this)" id="2" class="spot-empty"></div>
+            <div onclick="setSpot(this)" id="3" class="spot-empty"></div>
+            <div onclick="setSpot(this)" id="4" class="spot-empty"></div>
+            <div onclick="setSpot(this)" id="5" class="spot-empty"></div>
+            <div onclick="setSpot(this)" id="6" class="spot-empty"></div>
+            <div onclick="setSpot(this)" id="7" class="spot-empty"></div>
+            <div onclick="setSpot(this)" id="8" class="spot-empty"></div>
+        </div>
+        <script src="js/tic-tac-toe.js"></script>
+    </div>
+
+    <div class="feats-item">
+        <div class="master-mind-grid">
+            <div id="eval-0" class="pin-grey"></div>
+            <div id="eval-1" class="pin-grey"></div>
+            <div id="eval-2" class="pin-grey"></div>
+            <div id="eval-3" class="pin-grey"></div>
+
+            <div id="player-0" class="pin-grey"></div>
+            <div id="player-1" class="pin-grey"></div>
+            <div id="player-2" class="pin-grey"></div>
+            <div id="player-3" class="pin-grey"></div>
+
+            <select id="select-0" class="select-color" onchange="changeColor(this)" name="Color">
+                <option selected disabled hidden value="none">Select a color</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="yellow">Yellow</option>
+                <option value="orange">Orange</option>
+                <option value="cyan">Cyan</option>
+            </select>
+            <select id="select-1" class="select-color" onchange="changeColor(this)" name="Color">
+                <option selected disabled hidden value="none">Select a color</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="yellow">Yellow</option>
+                <option value="orange">Orange</option>
+                <option value="cyan">Cyan</option>
+            </select>
+            <select id="select-2" class="select-color" onchange="changeColor(this)" name="Color">
+                <option selected disabled hidden value="none">Select a color</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="yellow">Yellow</option>
+                <option value="orange">Orange</option>
+                <option value="cyan">Cyan</option>
+            </select>
+            <select id="select-3" class="select-color" onchange="changeColor(this)" name="Color">
+                <option selected disabled hidden value="none">Select a color</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="yellow">Yellow</option>
+                <option value="orange">Orange</option>
+                <option value="cyan">Cyan</option>
+            </select>
+
+            <script src="js/master-mind.js"></script>
+        </div>
+
+        <p>
+            I made Master-Mind in HTML, CSS and JavaScript. This game features selecting colors. When all the spots are
+            filled, the game evaluates your input and compares it to the random code that has been generated. Black
+            means correct, white means present and grey means nonexistent.
+        </p>
+    </div>
+</main>
+
+<footer>
+    <span id="copyright" class="copyright">Copyright 2024 &copy; Anouar-Anthony Tel</span>
+
+    <div class="decor">
+        <div class="circle-left"></div>
+        <div class="oval"></div>
+        <div class="circle-right"></div>
+    </div>
+
+    <div id="socials" class="socials">
+        <a target="_blank" href="https://t.me/anouaranthony"><img src="images/telegram.svg" alt="telegram"></a>
+        <a target="_blank" href="https://github.com/a-a-tel"><img src="images/github.svg" alt="github"></a>
+        <a target="_blank" href="https://discordapp.com/users/441582230666739722/"><img src="images/discord.svg"
+                                                                                        alt="discord"></a>
+        <a target="_blank" href="https://www.reddit.com/user/fireyburst1097/"><img src="images/reddit.svg" alt="reddit"></a>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
