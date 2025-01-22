@@ -27,6 +27,7 @@ function resetGame() {
     setPositions.fill(false);
     secretCode = generateCode();
 
+
     for (let i = 0; i < setPositions.length; i++) {
         document.getElementById('eval-' + i).className = 'pin-grey';
         document.getElementById('player-' + i).className = 'pin-grey';
