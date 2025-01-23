@@ -1,0 +1,3 @@
+backdrop.png
+color.png
+hit.wav

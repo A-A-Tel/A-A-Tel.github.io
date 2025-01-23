@@ -316,12 +316,9 @@ header::after {
 
 /* Feats items */
 
-.feats-description {
-    font-size: 1vw;
-}
-
-.feats-feat-container {
-    display: flex;
+.feats-subtitle {
+    margin-top: 5vh;
+    font-size: 2vw;
 }
 
 .feats-item {
@@ -341,6 +338,12 @@ header::after {
 
 .feats-item img {
     max-width: 40vw;
+}
+
+.feats-item iframe {
+    border-radius: 1vw;
+    width: 60vw;
+    height: 60vh;
 }
 
 /* Misc */

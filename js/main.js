@@ -1,4 +1,4 @@
-
+// Resize the different header items dynamically
 function resizeHeaderItems() {
 
     const socials = document.getElementById("socials");
@@ -16,6 +16,22 @@ function resizeHeaderItems() {
         copyright.style.margin = "0px " + ((boundSocials.width - boundCopyright.width) / 2) + "px";
     }
 }
+
+// Prevent the scrolling whilst playing pong
+const iframe = document.getElementById("pong");
+
+function preventScroll(event) {
+
+    if (event.key === 'ArrowUp' || event.key === 'ArrowDown' || event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+        event.preventDefault();
+    }
+}
+
+iframe.onload = function () {
+    const iframeDocument = iframe.contentWindow.document;
+
+    iframeDocument.addEventListener('keydown', preventScroll);
+};
 
 resizeHeaderItems();
 window.addEventListener("resize", resizeHeaderItems);
