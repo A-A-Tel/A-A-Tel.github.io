@@ -346,6 +346,84 @@ header::after {
     height: 60vh;
 }
 
+/* Contact items */
+
+.contact-subtitle {
+    margin: 5vh 0;
+    font-size: 1.5vw;
+    font-family: inter-regular, sans-serif;
+    color: #757575;
+}
+
+.contact-item {
+    display: flex;
+    width: 40vw;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+}
+
+.contact-item img {
+    width: 5vw;
+}
+
+.contact-method {
+    font-family: inter-regular, sans-serif;
+    font-size: 1.5vw;
+    color: #536DFE;
+}
+
+.contact-form {
+    width: 50vw;
+    height: fit-content;
+    padding: 5vh 5vw;
+    border-radius: 0.5vw;
+    display: flex;
+    flex-flow: column wrap;
+    background: #BBDEFB;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+.contact-form-item {
+    margin-bottom: 10vh;
+}
+
+.contact-form-item h3 {
+    font-size: 1.2vw;
+    color: #000;
+    margin-bottom: 1vh;
+}
+
+.contact-form input {
+    padding: 1vh 1vw;
+    background: #80C5FF;
+    border: #113D7E solid 0.1vw;
+    border-radius: 1vw;
+    font-size: 1.1vw;
+    align-self: flex-end;
+}
+
+.contact-form input:hover {
+    background: #85b9e5;
+}
+
+.contact-form-item input, .contact-form-item textarea {
+    font-size: 1vw;
+    width: 25vw;
+    height: 5vh;
+    padding: 1vh 1vw;
+    background: #80C5FF;
+    border: #113D7E solid 0.1vw;
+    border-radius: 1vw;
+    font-family: merryweather-regular, sans-serif;
+}
+
+.contact-form-item textarea {
+    resize: none;
+    height: 25vh;
+}
+
 /* Misc */
 
 .hide {
