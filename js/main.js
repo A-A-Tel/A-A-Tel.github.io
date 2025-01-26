@@ -17,6 +17,7 @@ function resizeHeaderItems() {
         copyright.style.margin = "0px " + ((boundSocials.width - boundCopyright.width) / 2) + "px";
     }
 }
+
 resizeHeaderItems();
 window.addEventListener("resize", resizeHeaderItems);
 
@@ -25,7 +26,7 @@ const iframe = document.getElementById("pong");
 
 function preventScroll(event) {
 
-    if (event.key === 'ArrowUp' || event.key === 'ArrowDown' || event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+    if (event.key === "ArrowUp" || event.key === "ArrowDown" || event.key === "ArrowLeft" || event.key === "ArrowRight") {
         event.preventDefault();
     }
 }
@@ -34,6 +35,7 @@ if (iframe !== null) {
     iframe.onload = function () {
         const iframeDocument = iframe.contentWindow.document;
 
-        iframeDocument.addEventListener('keydown', preventScroll);
+        iframeDocument.addEventListener("keydown", preventScroll);
     };
 }
+

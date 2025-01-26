@@ -276,12 +276,13 @@ header::after {
     border-radius: 0.5vw;
     width: 90vw;
     height: 80vh;
-    padding: 5vh 5vw;
+    padding: 5vh 5vw 10vh 5vw;
     background: #BBDEFB;
     margin: 5vh auto;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-between;
+
 }
 
 .tools-lang-container {
@@ -300,6 +301,12 @@ header::after {
     max-width: 70%;
     max-height: 80%;
     margin: auto 0;
+}
+
+.tools-lang-box h2 {
+    display: block;
+    width: 100%;
+    font-size: 5vw;
 }
 
 .tools-environment-title {
@@ -447,7 +454,27 @@ header::after {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
+
+    /* Header items */
+
+    header {
+        justify-content: center;
+    }
+
+    header::after {
+        display: none;
+    }
+
+    .menu-bar {
+        gap: 4vw;
+    }
+
+    .menu-button {
+        font-size: 2.7vw;
+        padding: 2vh 4vw;
+        border-radius: 2vw;
+    }
 
     /* Footer items */
 
@@ -456,7 +483,7 @@ header::after {
     }
 
     .credit {
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
 
     .socials a img {
@@ -464,13 +491,88 @@ header::after {
         transition: transform 0.5s;
     }
 
+    /* Home items */
+
+    .home-who-box {
+        width: 50vw;
+        height: fit-content;
+    }
+
+    .home-who-box h2, .home-why-box h2 {
+        font-size: 4.5vw;
+    }
+
+    .home-who-box p, .home-why-box p {
+        font-size: 2vw;
+        max-width: none;
+    }
+
+    .home-why-box p {
+        margin-top: 7vh;
+        font-size: 3.5vw;
+    }
+
+    /* Tools items */
+
+    .tools-lang-box {
+        flex-flow: row wrap;
+        height: fit-content;
+    }
+
+    .tools-lang-container {
+        width: 30vw;
+        font-size: 3vw;
+        height: 80vh;
+    }
+
+    .tools-environment-container {
+        font-size: 2vw;
+    }
+
+    .tools-environment-container p {
+        max-width: none;
+    }
+
+    /* Feats items */
+
+    .feats-subtitle {
+        font-size: 4vw;
+    }
+
+    .feats-item p {
+        font-size: 2.5vw;
+    }
+
+    /* Contact items */
+
+    .contact-subtitle {
+        font-size: 3.5vw;
+    }
+
+    .contact-item {
+        margin: 1vh 0;
+        height: fit-content;
+    }
+
+    .contact-item a {
+        font-size: 2vw;
+    }
+
+    .contact-form-item {
+        margin: 1vh 0;
+    }
+
+    .contact-form-item input {
+        height: 3.5vh;
+    }
+
+    .contact-form textarea {
+        height: 12vh;
+    }
+
     /* Misc */
 
     .mobile-hidden {
-        display: none;
-    }
-
-    header::after {
         display: none;
     }
 }
