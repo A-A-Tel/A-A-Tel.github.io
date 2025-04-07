@@ -87,6 +87,15 @@ footer {
 a {
     text-decoration: none;
     color: inherit;
+    transition: scale 0.5s;
+}
+
+li {
+    transition: scale 0.8s;
+}
+
+a:hover, li:hover {
+    scale: 1.2;
 }
 
 .hidden {
@@ -201,4 +210,58 @@ a {
 .description-right {
     z-index: -1;
     margin: 0 10.5vw 0 -5vw;
+}
+
+.discord-box {
+    height: 25vw;
+    width: 35vw;
+    p {
+        text-align: center;
+        line-height: 1.8vw;
+    }
+}
+
+.pong {
+    margin: 5vw 10%;
+    width: 80vw;
+    height: 50vw;
+    border: none;
+    border-radius: 1vw;
+}
+
+.pong-text {
+    width: 30vw;
+    height: 30vw;
+    margin: 0 auto;
+    background: #C5CAE9;
+    border-radius: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 2vw;
+
+    h2 {
+        color: #000;
+        font-size: 1.5vw;
+        font-family: Anton-Regular, sans-serif;
+    }
+
+    p {
+        text-align: center;
+        color: #757575;
+        font-size: 1.1vw;
+        font-family: Antonio-Regular, sans-serif;
+        line-height: 1.7vw;
+    }
+}
+
+.border-none {
+    border: none;
+    border-radius: 0;
+}
+
+.champion-container {
+    margin: 15vw auto;
 }
