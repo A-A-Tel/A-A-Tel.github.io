@@ -144,6 +144,7 @@ a:hover, li:hover {
 
 .link {
     text-decoration: underline;
+    color: #3F51B5;
 }
 
 .icons8 {
@@ -215,6 +216,7 @@ a:hover, li:hover {
 .discord-box {
     height: 25vw;
     width: 35vw;
+
     p {
         text-align: center;
         line-height: 1.8vw;
@@ -231,7 +233,7 @@ a:hover, li:hover {
 
 .pong-text {
     width: 30vw;
-    height: 30vw;
+    height: 35vw;
     margin: 0 auto;
     background: #C5CAE9;
     border-radius: 2vw;
@@ -264,4 +266,47 @@ a:hover, li:hover {
 
 .champion-container {
     margin: 15vw auto;
+}
+
+.contact-box {
+    color: #C5CAE9;
+    padding: 2vw 2vw;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 3vw;
+    background: #303F9F;
+    border-radius: 1vw;
+    height: fit-content;
+    width: 35vw;
+    margin: 12vw auto;
+}
+
+.contact-box h2 {
+    font-family: 'Anton-Regular', 'sans-serif';
+    font-size: 2vw;
+}
+
+.contact-box p {
+    margin-top: 1.3vw;
+    font-family: 'Antonio-Regular', 'sans-serif';
+    font-size: 1.1vw;
+}
+
+
+.contact-list {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1vw;
+    width: 30vw;
+}
+
+.contact-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-item a {
+    font-family: 'poppins-regular', 'sans-serif';
+    font-size: 1.3vw;
 }
