@@ -1,1 +1,1 @@
-Little portfolio website for my school even though I have nothing to show for it.
+Little portfolio website of mine even though there isn't much to talk about

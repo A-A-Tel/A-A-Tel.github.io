@@ -1,81 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>This is me</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
-
 <body>
 
 <header>
-    <a href="index.html"><img class="logo mobile-hidden" src="images/logo.png" alt="logo"></a>
 
-    <nav class="menu-bar">
-        <a href="index.html" class="menu-button current-page">Home</a>
-        <a href="tools.html" class="menu-button">Tools</a>
-        <a href="feats.html" class="menu-button">Feats</a>
-        <a href="contact.html" class="menu-button">Contact</a>
+    <a href="/"><img src="/images/logo.png" alt="logo image"></a>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/projects/">Projecten</a></li>
+            <li><a href="/contact/">Contact</a></li>
+        </ul>
     </nav>
 
-    <img class="logo hide mobile-hidden" src="images/logo.png" alt="logo">
+    <img class="hidden" src="/images/logo.png" alt="logo image">
+
 </header>
 
 <main>
-    <h1 class="title">This is me...</h1>
 
-    <div class="home-who-container">
-        <div class="home-who-box">
-            <h2>Who am I?</h2>
+    <div class="intro-container">
+        <div class="intro-box">
+
+            <h2>Anouar-Anthony Tel</h2>
 
             <p>
-                My name is Anouar-Anthony Tel, near graduate of ROC Nijmegen.
+                Leeftijd: 17 jaar<br>
                 <br>
+                School: ROC Nijmegen<br>
                 <br>
-                As a kid, I always adored programming. Now I can finally do it professionally. And I happen to be
-                very good at it!
+                Werk: McDonald's
             </p>
         </div>
 
-        <img src="images/man.png" alt="man">
+        <img src="/images/avatar.png" alt="me image">
     </div>
 
-    <div class="home-why-box">
-        <h2>Why should you hire me?</h2>
+    <div class="description-container">
 
-        <div class="home-why-container">
-            <p id="par">
-                I am known for my great efficiency. My ability to write optimized code in quick succession is my digital
-                signature. Problems are non-existent within my code and am thereby proud to present that I am available
-                for hire! You may explore this page more, or go directly to my projects allowing you to play a simple
-                game I made when I was bored. My contact info is at the end.
+        <img class="description-left" src="/images/school.jpg" alt="school image">
+
+        <div class="description-box">
+
+            <h2>Even over mij</h2>
+
+            <p>
+                Al heel mijn leven zit ik te spelen met computers, en nu zal het eindelijk mijn baan worden. Mensen
+                helpen doe ik graag, vaak ben ik tijdens lessen meer met andere bezig omdat ik ver voor loop. In mijn
+                vrije tijd ben ik nog steeds bezig met wat kleine projecten. Deze zijn te vinden op mijn
+                <a class="link" target="_blank" href="https://github.com/a-a-tel.nl">GitHub</a>. Naast dit allemaal help
+                ik ook nog mee bij mijn buurtorganisatie. Hier help ik bij het opzetten van het bouwdorp, kinderen
+                helpen en de jaarlijkse halloweentocht.
             </p>
-
-            <img class="mobile-hidden" src="images/portrait.png" alt="portrait">
         </div>
+
+        <img class="description-right" src="/images/construction-village.jpg" alt="construction village image">
     </div>
+
 </main>
 
 <footer>
-    <span id="credit" class="credit">Icons by <u><a href="https://icons8.com">Icons8</a></u></span>
-
-    <div class="decor mobile-hidden">
-        <div class="circle-left"></div>
-        <div class="oval"></div>
-        <div class="circle-right"></div>
+    
+    <a id="credit" class="icons8 link" href="https://icons8.com">Icons by Icons8</a>
+    
+    <div class="socials-container">
+        <a href="https://\linkedin.com/in/anouar-anthony-tel-704265261"><img src="/images/linkedin.svg" alt="linkedin image"></a>
+        <a href="https://t.me/anouaranthony"><img src="/images/telegram.svg" alt="telegram image"></a>
+        <a href="https://github.com/a-a-tel"><img src="/images/github.svg" alt="github image"></a>
     </div>
-
-    <div id="socials" class="socials">
-        <a target="_blank" href="https://t.me/anouaranthony"><img src="images/telegram.svg" alt="telegram"></a>
-        <a target="_blank" href="https://github.com/a-a-tel"><img src="images/github.svg" alt="github"></a>
-        <a target="_blank" href="https://discordapp.com/users/441582230666739722/"><img src="images/discord.svg"
-                                                                                        alt="discord"></a>
-        <a target="_blank" href="https://www.reddit.com/user/fireyburst1097/"><img src="images/reddit.svg" alt="reddit"></a>
-    </div>
+    
 </footer>
 
-<script src="js/main.js"></script>
+<script src="/js/main.js"></script>
 </body>
 </html>
